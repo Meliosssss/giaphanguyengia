@@ -17,8 +17,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("user@gmail.com");
+  const [password, setPassword] = useState("user123");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isDemo, setIsDemo] = useState(false);
@@ -313,15 +313,15 @@ export default function LoginPage() {
                 )}
               </button>
 
-              <div className="relative flex items-center py-2 opacity-60">
+              {/* <div className="relative flex items-center py-2 opacity-60">
                 <div className="grow border-t border-stone-200"></div>
                 <span className="shrink-0 mx-4 text-stone-400 text-[11px] uppercase tracking-wider font-bold">
                   Hoặc
                 </span>
                 <div className="grow border-t border-stone-200"></div>
-              </div>
+              </div> */}
 
-              <button
+              {/* <button
                 type="button"
                 onClick={() => {
                   if (isLogin && isDemo) {
@@ -339,7 +339,7 @@ export default function LoginPage() {
                 {isLogin
                   ? "Chưa có tài khoản? Đăng ký ngay"
                   : "Đã có tài khoản? Đăng nhập"}
-              </button>
+              </button> */}
             </div>
           </form>
         </motion.div>
@@ -353,13 +353,13 @@ export default function LoginPage() {
         Trang chủ
       </Link>
 
-      <Link
+      {/* <Link
         href="/about"
         className="absolute top-6 right-6 z-20 flex items-center gap-2 text-stone-500 hover:text-stone-900 font-semibold text-sm transition-all duration-300 group bg-white/60 px-5 py-2.5 rounded-full shadow-sm border border-stone-200 hover:border-stone-300 hover:shadow-md"
       >
         <Info className="size-4 group-hover:scale-110 transition-transform" />
         Giới thiệu
-      </Link>
+      </Link> */}
 
       <Footer className="bg-transparent relative z-10 border-none mt-auto" />
     </div>

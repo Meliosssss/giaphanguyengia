@@ -136,14 +136,14 @@ export default function HeaderMenu() {
 
               <div className="h-px bg-stone-100 my-1 mx-4" />
 
-              <Link
+              {/* <Link
                 href="/about"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-stone-700 hover:text-rose-700 hover:bg-rose-50 transition-colors"
               >
                 <Info className="size-4" />
                 Giới thiệu
-              </Link>
+              </Link> */}
 
               <LogoutButton />
             </div>
